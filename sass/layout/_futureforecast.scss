@@ -1,0 +1,32 @@
+.future-forecast {
+  @include flexCenter;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  font-size: 0.8rem;
+
+  .future-forecast__day {
+    @include flexCenter;
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative;
+    width: 80%;
+    height: 35px;
+
+    .icon {
+      height: 40px;
+      position: absolute;
+      left: 50%;
+    }
+
+    .temperatures {
+      @include flexCenter;
+      justify-content: space-between;
+      width: 20%;
+
+      .lowest {
+        font-weight: lighter;
+      }
+    }
+  }
+}

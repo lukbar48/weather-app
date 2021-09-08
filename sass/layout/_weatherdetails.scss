@@ -1,0 +1,22 @@
+.weather-details {
+  @include flexCenter;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  width: 90%;
+  height: 50px;
+  border: 1px solid $border-color;
+  border-radius: 25px;
+  font-size: 0.7rem;
+
+  @include mq(375px) {
+    height: 70px;
+    width: 80%;
+  }
+
+  .wind, .humidity, .pressure {
+    @include flexCenter;
+    flex-direction: column;
+    width: 33.33%;
+  }
+}

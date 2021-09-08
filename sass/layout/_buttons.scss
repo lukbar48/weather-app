@@ -1,0 +1,16 @@
+.buttons {
+  @include flexCenter;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  width: 60%;
+  height: 50px;
+  font-size: 1.5rem;
+
+  .buttons__location, .buttons__home, .buttons__save {
+    cursor: pointer;
+  }
+  .buttons__location:hover, .buttons__home:hover, .buttons__save:hover {
+    color: $button-hover-color;
+  }
+}

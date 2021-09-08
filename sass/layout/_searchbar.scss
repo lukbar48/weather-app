@@ -1,0 +1,52 @@
+.search-bar {
+  height: 35px;
+  width: 100%;
+  background-color: $fade-color;
+  border-radius: 20px;
+  
+  @include mq(768px) {
+    height: 50px;
+  }
+
+  .search-bar__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    input {
+      @include flexCenter;
+      height: 100%;
+      width: 90%;
+      border: none;
+      border-radius: 20px;
+      background-color: transparent;
+      color: $button-hover-color;
+      font-size: 1.1rem;
+      font-weight: 300;
+      padding-left: 15px;
+    }
+
+    input::placeholder {
+      color: white;
+      font-weight: 300;
+    }
+  
+    button {
+      @include flexCenter;
+      height: 100%;
+      width: 10%;
+      font-size: 1.2rem;
+      color: white;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    button:hover {
+      color: $button-hover-color;
+    }
+  }
+}

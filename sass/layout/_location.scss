@@ -1,0 +1,24 @@
+.location {
+  @include flexCenter;
+  justify-content: space-between;
+  width: 95%;
+  align-self: center;
+  padding-top: 5px;
+
+  .location__city {
+    font-size: 1.4rem;
+  }
+
+  .location__units {
+    @include flexCenter;
+    background-color: transparent;
+    font-size: 1.8rem;
+    color: white;
+    border:none;
+    cursor: pointer;
+  }
+
+  .location__units:hover {
+    color: $button-hover-color;
+  }
+}

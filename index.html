@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width
+  , initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+  <script type="module" src="js/main.js"></script>
+  <title>Weather app</title>
+</head>
+
+<body>
+  <main>
+    <section class="search-bar">
+      <form class="search-bar__form" role="search">
+        <input class="search-bar__input" type="text" role="searchbox" placeholder="City, Country" size="40">
+        <button title="Change temperature unit" type="submit"><i class="fas fa-search"></i></button>
+      </form>
+    </section>
+    <section class="location">
+      <div class="location__city">
+      </div>
+      <button class="location__units">
+        <i class="fas fa-temperature-high"></i>
+      </button>
+    </section>
+    <section class="current-forecast">
+      <img class="current-forecast__icon" alt="">
+      <div class="current-forecast__conditions">
+        <div class="degrees">
+        </div>
+        <div class="conditions">
+        </div>
+      </div>
+    </section>
+    <section class="weather-details">
+      <div class="wind">Wind<span class="wind-span">20 km/h</span></div>
+      <div class="humidity">Humidity<span class="humidity-span">60%</span></div>
+      <div class="pressure">Pressure<span class="pressure-span">1000 hPa</span></div>
+    </section>
+    <section class="buttons">
+      <div class="buttons__location" title="Get current location forecast"><i class="fas fa-map-marker-alt"></i></div>
+      <div class="buttons__home" title="Show home location forecast"><i class="fas fa-home"></i></div>
+      <div class="buttons__save" title="Save location as home location"><i class="fas fa-save"></i></div>
+    </section>
+    <section class="future-forecast">
+    </section>
+  </main>
+
+</body>
+
+</html>

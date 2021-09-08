@@ -1,0 +1,40 @@
+.current-forecast {
+  @include flexCenter;
+  justify-content: space-around;
+
+  .current-forecast__icon {
+    height: 100px;
+
+    @include mq(375px) {
+      height: 160px;
+    }
+    @include mq(768px) {
+      height: 230px;
+    }
+  }
+
+  .current-forecast__conditions {
+    @include flexCenter;
+    flex-direction: column;
+
+    .degrees {
+      font-size: 2rem;
+
+      @include mq(375px) {
+        font-size: 3.9rem;
+      }
+      @include mq(768px) {
+        font-size: 4.5rem;
+      }
+    }
+
+    .conditions {
+      font-size: 1rem;
+      transform: translateX(-10px);
+
+      @include mq(768px) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
