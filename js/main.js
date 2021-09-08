@@ -17,6 +17,7 @@ const startApp = () => {
   saveBtn.addEventListener('click', saveLocation)
   const unitBtn = document.querySelector('.location__units')
   unitBtn.addEventListener('click', switchUnit)
+  homeLocation()
   displayWeatherByCity()
 }
 document.addEventListener("DOMContentLoaded", startApp);
