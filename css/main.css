@@ -152,16 +152,31 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-self: center;
-  width: 60%;
-  height: 50px;
+  width: 90%;
+  height: 80px;
   font-size: 1.5rem;
 }
 
 .buttons .buttons__location, .buttons .buttons__home, .buttons .buttons__save {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 20%;
+}
+
+.buttons .buttons__location i, .buttons .buttons__home i, .buttons .buttons__save i {
   cursor: pointer;
 }
 
-.buttons .buttons__location:hover, .buttons .buttons__home:hover, .buttons .buttons__save:hover {
+.buttons .buttons__location p, .buttons .buttons__home p, .buttons .buttons__save p {
+  padding-bottom: 10px;
+  font-size: 0.5rem;
+  text-align: center;
+}
+
+.buttons .buttons__location i:hover, .buttons .buttons__home i:hover, .buttons .buttons__save i:hover {
   color: #b4b4b4;
 }
 
@@ -231,7 +246,7 @@ main {
   justify-content: space-between;
   width: 95%;
   align-self: center;
-  padding-top: 5px;
+  padding-top: 10px;
 }
 
 .location .location__city {
@@ -242,6 +257,13 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.location .location__units-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
   font-size: 1.8rem;
   color: white;
@@ -249,7 +271,13 @@ main {
   cursor: pointer;
 }
 
-.location .location__units:hover {
+.location .location__units p {
+  font-size: 0.6rem;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.location .location__units i:hover {
   color: #b4b4b4;
 }
 

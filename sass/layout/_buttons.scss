@@ -3,14 +3,25 @@
   flex-direction: row;
   justify-content: space-between;
   align-self: center;
-  width: 60%;
-  height: 50px;
+  width: 90%;
+  height: 80px;
   font-size: 1.5rem;
 
   .buttons__location, .buttons__home, .buttons__save {
+    @include flexCenter;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 20%;
+  }
+  .buttons__location i, .buttons__home i, .buttons__save i {
     cursor: pointer;
   }
-  .buttons__location:hover, .buttons__home:hover, .buttons__save:hover {
+  .buttons__location p, .buttons__home p, .buttons__save p {
+    padding-bottom: 10px;
+    font-size: 0.5rem;
+    text-align: center;
+  }
+  .buttons__location i:hover, .buttons__home i:hover, .buttons__save i:hover {
     color: $button-hover-color;
   }
 }

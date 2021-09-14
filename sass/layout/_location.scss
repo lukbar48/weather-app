@@ -3,13 +3,17 @@
   justify-content: space-between;
   width: 95%;
   align-self: center;
-  padding-top: 5px;
+  padding-top: 10px;
 
   .location__city {
     font-size: 1.4rem;
   }
-
   .location__units {
+    @include flexCenter;
+    flex-direction: column;
+  }
+
+  .location__units-button {
     @include flexCenter;
     background-color: transparent;
     font-size: 1.8rem;
@@ -18,7 +22,13 @@
     cursor: pointer;
   }
 
-  .location__units:hover {
+  .location__units p {
+    font-size: 0.6rem;
+    text-align: center;
+    padding-top: 8px;
+  }
+
+  .location__units i:hover {
     color: $button-hover-color;
   }
 }

@@ -4,8 +4,8 @@ import {
 } from "./dataFunctions.js"
 const currentLoc = new LocationAndUnits();
 
-let apiKey = 'c2e097d87337bcc7410f885309c63a6e';
-let apiKey2 = 'c1c92c1ac752490d9464dbb3bffcad7a';
+const apiKey = 'c2e097d87337bcc7410f885309c63a6e';
+const apiKey2 = 'c1c92c1ac752490d9464dbb3bffcad7a';
 let locationFlag = 1;
 
 const startApp = () => {
@@ -53,10 +53,10 @@ const displayWeatherByCity = () => {
       currentLoc.setLat(data.results[0].geometry.lat)
       currentLoc.setLon(data.results[0].geometry.lng)
       displayCityName(data)
+      getWeatherByCoords()
     } else {
       return currentCity.textContent = `Can't find the location`
     }
-    getWeatherByCoords()
   }
 }
 
